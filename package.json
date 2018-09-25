@@ -1,0 +1,49 @@
+{
+  "name": "jist-api",
+  "version": "1.0.0",
+  "description": "Community for Discussions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "rm -rf ./dist && babel src --out-dir dist",
+    "dev": "nodemon --exec babel-node --presets=@babel/env src/index.js",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-fabolaji/jist-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-fabolaji/jist-api/issues"
+  },
+  "homepage": "https://github.com/andela-fabolaji/jist-api#readme",
+  "dependencies": {
+    "@babel/node": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.1",
+    "socket.io": "^2.1.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-transform-arrow-functions": "^7.0.0",
+    "@babel/plugin-transform-literals": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/plugin-transform-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "cross-env": "^5.2.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4"
+  }
+}
